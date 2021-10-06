@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Number Guessing Game</title>
 </head>
 
 <body>
-    <main>
-        <h1>Number Guessing Game</h1>
-        <p>I am thinking of a number between 1 and 100</p>
-        <p>Can you guess it?</p>
-        <input type="text" name="" id="" placeholder="Number" class="num-input">
-        <button class="guess-btn">GUESS</button>
-        <p class="error"></p>
-        <p class="feedback"></p>
-        <p class="guesses">Number of guesses: <span class="num-guesses">0</span></p>
-        <p class="numbers-list">Guessed numbers are: <span class="guessed-nums">none</span></p>
-        <p class="the-number"></p>
-        <p class="results"></p>
-        <div class="play-again">
-            <p>Would you like to play again?</p>
-            <button class="yes">Yes</button>
-            <button class="no">No</button>
-            <p class="thanks">Thanks for playing!</p>
+    <main class="main-content">
+        <div class="container">
+            <h1>Number Guessing Game</h1>
+            <p>I am thinking of a number between 1 and 100</p>
+            <p>Can you guess it?</p>
+            <div class="guess-container">
+                <div>
+                    <input type="text" name="" id="" placeholder="Number" class="num-input">
+                </div>
+                <div>
+                    <button class="guess-btn">GUESS</button>
+                </div>
+            </div>
+            <p class="error"></p>
+            <p class="feedback"></p>
+            <p class="guesses">Number of guesses: <span class="num-guesses">0</span></p>
+            <p class="numbers-list">Guessed numbers are: <span class="guessed-nums">none</span></p>
+            <p class="the-number"></p>
+            <p class="results"></p>
+            <div class="play-again">
+                <p>Would you like to play again?</p>
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+                <p class="thanks">Thanks for playing!</p>
+            </div>
         </div>
     </main>
 
