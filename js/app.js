@@ -53,17 +53,17 @@ button.addEventListener("click", () => {
     } else if (guessedNums.includes(guess)) {
         displayError("You already guessed that number");
     } else if (guess < answer) {
-        feedback.innerHTML = "Your Guess it Too Low";
+        feedback.innerHTML = "Your guess is TOO LOW";
         updateResults(guess);
     } else if (guess > answer) {
-        feedback.innerHTML = "Your Guess it Too High";
+        feedback.innerHTML = "Your guess is TOO HIGH";
         updateResults(guess);
     } else {
         guesses.style.display = "none";
         numList.style.display = "none";
         updateResults(guess);
         feedback.innerHTML = "You guessed the number!";
-        answerDisplay.innerHTML = `The Number was ${answer}`;
+        answerDisplay.innerHTML = `The number was ${answer}`;
         results.innerHTML = `You guessed it in ${numGuesses} guesses`;
         button.disabled = "true";
         playAgain.style.display = "block";
